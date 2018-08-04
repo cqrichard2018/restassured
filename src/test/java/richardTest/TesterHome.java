@@ -69,7 +69,7 @@ public class TesterHome {
         .body("topics.find {topics -> topics.id == 10254}.title",equalTo("优质招聘汇总"))
                 ;
     }
-    @Test
+    //@Test
     public void xmlTest(){
         Response se = given().when().get("http://localhost:8888/xmltest.xml").prettyPeek()
                 .then()
