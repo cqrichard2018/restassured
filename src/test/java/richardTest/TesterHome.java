@@ -21,7 +21,7 @@ public class TesterHome {
         given().get("https://testerhome.com/api/v3/topics.json")
                 .then()
                 .statusCode(200)
-                //.body("topics.title",hasItems("优质招聘汇总","一步一步教你打造接口测试平台 (1)"))
+                .body("topics.title",hasItems("优质招聘汇总","一步一步教你打造接口测试平台 (1)"))
                 ;
     }
 
