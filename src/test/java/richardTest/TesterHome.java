@@ -25,14 +25,14 @@ public class TesterHome {
                 .body("html.head.title",equalTo("appium · 搜索结果 · TesterHome"));
 
     }
-    @BeforeClass
+    /*@BeforeClass
     public static void setup(){
         useRelaxedHTTPSValidation();
         RestAssured.baseURI = "https://testerhome.com";
                 //System.setProperty("javax.net.ssl.trustStore", "C:\\Users\\lijiang816\\Downloads\\cacert");
         RestAssured.proxy("127.0.0.1",8444);
 
-    }
+    }*/
     @Test
     public void testerHomeJson(){
         given().get("https://testerhome.com/api/v3/topics.json")
